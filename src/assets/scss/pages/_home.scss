@@ -1,0 +1,8 @@
+.home-container {
+  background-color: $white;
+  padding: 1rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 2.375rem 6.25rem 0 6.25rem;
+  }
+}
