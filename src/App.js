@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Layout from './components/layout/Layout';
+import Layout from './components/layout/layout';
 
 import Rockets from './pages/Rockets';
 import Missions from './pages/Missions';
