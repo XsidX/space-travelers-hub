@@ -1,9 +1,9 @@
-.main-container {
-  background-color: $white;
-  padding-bottom: 2.5rem;
+.layout {
+  &__content {
+    padding: 1rem;
 
-  @media screen and (min-width: 768px) {
-    margin: 5%;
-    filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+    @media screen and (min-width: 768px) {
+      padding: 1rem 2rem;
+    }
   }
 }
