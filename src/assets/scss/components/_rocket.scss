@@ -1,0 +1,13 @@
+.rocket-container {
+    display: flex;
+    margin: 10px 20px;
+    img {
+        width: 150px;
+        border: 1px solid red;
+        margin-right: 20px;
+    }
+    button {
+        border: 1px solid red;
+        margin-top: 15px;
+    }
+}
