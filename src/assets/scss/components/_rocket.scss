@@ -5,8 +5,8 @@
     border: 1px solid $border;
     height: 200px;
     img {
-        height: 199px;
-        margin-right: 20px;
+        max-height:190px;
+        margin-right: 15px;
     }
     button {
         border: 1px solid $border;
