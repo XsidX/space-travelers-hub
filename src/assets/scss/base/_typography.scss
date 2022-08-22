@@ -1,0 +1,183 @@
+/* =====================================
+   01. Typography CSS
+===================================== */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+// /* Remove text-shadow in selection highlight. */
+// ::selection {
+//   background: $brandColor;
+//   color: $white;
+//   text-shadow: none;
+// }
+
+// /* A better looking default horizontal rule */
+// hr {
+//   border: 0;
+//   border-top: 1px solid $borderColor;
+//   box-sizing: content-box;
+//   display: block;
+//   height: 1px;
+//   margin: 1em 0;
+//   padding: 0;
+//   overflow: visible;
+// }
+
+// /* Remove the gap between audio, canvas, iframes,images, videos */
+// audio,
+// canvas,
+// iframe,
+// img,
+// svg,
+// video {
+//   vertical-align: middle;
+// }
+
+// /* Remove default fieldset styles. */
+// fieldset {
+//   border: 0;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// legend {
+//   box-sizing: border-box;
+//   color: inherit;
+//   display: table;
+//   max-width: 100%;
+//   padding: 0;
+//   white-space: normal;
+// }
+
+// /* Allow only vertical resizing of textareas. */
+// textarea {
+//   resize: vertical;
+// }
+
+// /* Anchor Tag Default Style */
+// a {
+//   transition: 0.4s;
+//   outline: none;
+//   text-decoration: none;
+
+//   &:hover,
+//   &:active,
+//   &:focus {
+//     color: inherit;
+//     outline: none;
+//     text-decoration: none;
+//   }
+// }
+
+// textarea,
+// input {
+//   &:focus,
+//   &:active {
+//     outline: none;
+//   }
+// }
+
+// /* Heading Default Style */
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+// h1,
+// .h1 {
+//   @include font-size(40px);
+//   font-weight: 700;
+//   margin-bottom: 25px;
+// }
+
+// h2,
+// .h2 {
+//   @include font-size(36px);
+//   font-weight: 600;
+//   margin-top: -5px;
+//   margin-bottom: 18px;
+// }
+
+// h3,
+// .h3 {
+//   @include font-size(30px);
+//   margin-bottom: 10px;
+// }
+
+// h4,
+// .h4 {
+//   @include font-size(24px);
+// }
+
+// h5,
+// .h5 {
+//   @include font-size(20px);
+// }
+
+// h6,
+// .h6 {
+//   @include font-size(18px);
+// }
+
+// /* Paragraph Margin */
+// p {
+//   font-size: 16px;
+//   margin-bottom: 15px;
+
+//   &:last-child {
+//     margin-bottom: 0;
+//   }
+// }
+
+// ul {
+//   margin: 0;
+//   padding: 0;
+
+//   li {
+//     list-style: none;
+//   }
+// }
+
+// strong,
+// b {
+//   font-weight: 700;
+// }
+
+// figure {
+//   margin: 0;
+// }
+
+// img {
+//   max-width: 100%;
+// }
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  box-shadow: none;
+  transition: 0.4s;
+
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
