@@ -1,7 +1,13 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import Header from '../Header';
 
-const Layout = ({ children }) => <div className="layout">{children}</div>;
+const Layout = ({ children }) => (
+  <div className="layout">
+    <Header />
+    {children}
+  </div>
+);
 
 Layout.propTypes = {
   children: propTypes.node.isRequired,
