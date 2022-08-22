@@ -1,9 +1,6 @@
 import React from 'react';
+import Missions from '../components/Missions';
 
-const Missions = () => (
-  <div>
-    <h1>Missions</h1>
-  </div>
-);
+const MissionsPage = () => <Missions />;
 
-export default Missions;
+export default MissionsPage;

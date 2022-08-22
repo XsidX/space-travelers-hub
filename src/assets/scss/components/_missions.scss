@@ -1,0 +1,37 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  border: 1px solid $border;
+  font-size: 0.8rem;
+
+  &__mission {
+    grid-column: span 1;
+  }
+
+  &__description {
+    grid-column: span 8;
+  }
+
+  &__status {
+    grid-column: span 3;
+    display: flex;
+  }
+
+  &__item {
+    border-top: 1px solid $border;
+    padding: 0.5rem 0.3rem;
+
+    &:nth-child(-n + 3) {
+      border-top: none;
+    }
+
+    &:nth-child(3n + 2) {
+      border-left: 1px solid $border;
+      border-right: 1px solid $border;
+    }
+
+    &--title {
+      font-weight: bold;
+    }
+  }
+}
