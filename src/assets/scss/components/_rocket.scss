@@ -1,13 +1,19 @@
 .rocket-container {
     display: flex;
     margin: 10px 20px;
+    align-items: center;
+    border: 1px solid $border;
+    height: 200px;
     img {
-        width: 150px;
-        border: 1px solid red;
+        height: 199px;
         margin-right: 20px;
     }
     button {
-        border: 1px solid red;
+        border: 1px solid $border;
         margin-top: 15px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: $btn;
+        color: $bodyColor;
     }
 }

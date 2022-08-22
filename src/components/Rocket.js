@@ -1,5 +1,5 @@
 import React from 'react';
-import dummyimg from '../assets/img/planet.png';
+import dummyimg from '../assets/img/dummy.jpg';
 
 const Rocket = () => (
   <div className="rocket-container">
