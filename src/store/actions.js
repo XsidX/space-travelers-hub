@@ -15,6 +15,7 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
     rocketsArray.push(rocketObject);
     return rocketsArray
   });
+  return rocketsArray;
 });
 
 export const getMissions = createAsyncThunk(

@@ -1,22 +1,31 @@
-import React from 'react';
-import dummyimg from '../assets/img/dummy.jpg';
+import React, { useEffect } from 'react';
+import { getRockets } from '../store/actions';
+import { useDispatch, useSelector } from 'react-redux';
 
-const Rocket = () => (
-  <div className="rocket-container">
+const Rocket = () => {
+  const dispatch= useDispatch();
+  const rockets = useSelector((state) => state.rockets.rockets) || [];
+
+  useEffect(() => {
+    dispatch(getRockets());
+  }, []);
+  return (
+    rockets.map((rocket) => (
+      <div className="rocket-container">
     <div className="rocket-img">
-      <img src={dummyimg} alt="rocket" />
+      <img src={rocket.flickr_image} alt="rocket" />
     </div>
     <div className="rocket-infos">
-      <h2>Falcon</h2>
+      <h2>{rocket.rocket_name}</h2>
       <p>
-        The Rockets section displays a list of all available SpaceX rockets.
-        Users can book each rocket by clicking the reservation button or
-        cancel the previously made booking. The same layout is used to form
-        the Dragons section
+       {rocket.description}
       </p>
-      <button type="button">Reserve Rocket</button>
+      <button id='${rocket.id}' type="button">Reserve Rocket</button>
     </div>
   </div>
-);
+    ))
+  )
+  
+};
 
 export default Rocket;
