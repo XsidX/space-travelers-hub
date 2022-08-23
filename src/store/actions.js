@@ -10,6 +10,7 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
       rocket_name: rocket.rocket_name,
       description: rocket.description,
       flickr_image: rocket.flickr_images[0],
+      reserved: false,
     };
     rocketsArray.push(rocketObject);
     return rocketsArray;

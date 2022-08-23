@@ -18,4 +18,19 @@
     background-color: $btn;
     color: $bodyColor;
   }
+  p{
+    span {
+      color :#fff;
+      background-color:$status-btn-active;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 600;
+      box-shadow: 0 1px 3px 0.1px rgba(0, 0, 0, 0.226);
+      margin-right: 5px;
+    }
+    .desactive {
+      display: none;
+    }
+  }
 }
