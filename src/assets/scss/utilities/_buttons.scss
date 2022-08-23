@@ -12,12 +12,17 @@
 }
 
 .action-btn {
+  padding: 0.4rem;
+  font-size: 0.75rem;
+  background-color: $btn;
+  color: $white;
 }
 
 .action-btn-outline {
   border: 1px solid $status-btn;
-  padding: 0.3rem;
+  padding: 0.4rem;
   font-size: 0.75rem;
+  color: $heading;
 }
 
 .outline-red {
