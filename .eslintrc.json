@@ -20,7 +20,8 @@
     "import/no-unresolved": "off",
     "no-shadow": "off",
     "operator-linebreak": "off",
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "arrow-body-style": "off"
   },
   "ignorePatterns": ["dist/", "build/"]
 }
