@@ -16,7 +16,7 @@ const rocketsSlice = createSlice({
       state.status = 'loading rockets';
     },
     [getRockets.fulfilled]: (state, action) => {
-      state.missions = action.payload;
+      state.rockets = action.payload;
       state.status = 'loading rockets complete';
     },
     [getRockets.rejected]: (state) => {

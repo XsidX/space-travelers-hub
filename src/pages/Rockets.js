@@ -1,12 +1,13 @@
 import React from 'react';
 // import Rocket from '../components/Rocket';
-import Rocket from '../components/Rocket';
+// import Rocket from '../components/Rocket';
+import Rockets from '../components/Rocket';
 
-const Rockets = () => (
+const RocketsPage = () => (
   <>
-    <Rocket />
+    <Rockets />
   </>
 
 );
 
-export default Rockets;
+export default RocketsPage;

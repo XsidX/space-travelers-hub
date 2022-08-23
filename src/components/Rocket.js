@@ -2,10 +2,9 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRockets } from '../store/actions';
 
-const Rocket = () => {
+const Rockets = () => {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rockets.rockets) || [];
-
   useEffect(() => {
     dispatch(getRockets());
   }, []);
@@ -27,4 +26,4 @@ const Rocket = () => {
   );
 };
 
-export default Rocket;
+export default Rockets;
