@@ -4,10 +4,7 @@ import React from 'react';
 import Rockets from '../components/Rocket';
 
 const RocketsPage = () => (
-  <>
-    <Rockets />
-  </>
-
+  <Rockets />
 );
 
 export default RocketsPage;
