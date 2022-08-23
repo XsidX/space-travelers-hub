@@ -1,5 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { missionsActions } from '../../store/missions/missions-slice';
 
 const GridHead = ({ children }) => (
   <div className="grid">
@@ -17,7 +19,12 @@ const GridHead = ({ children }) => (
 );
 
 const GridRow = ({ mission }) => {
-  const { name, description } = mission;
+  const dispatch = useDispatch();
+  const { id, name, description, joined } = mission;
+
+  const toggleJoin = () => {
+    dispatch(missionsActions.missionJoined(id));
+  };
 
   return (
     <>
@@ -28,10 +35,19 @@ const GridRow = ({ mission }) => {
         <h3>{description}</h3>
       </div>
       <div className="grid__item grid__status">
-        <button className="not-member" type="button">
-          NOT A MEMBER
+        <button
+          className={`${joined && 'status-active'} status-btn`}
+          type="button"
+        >
+          {joined ? 'Active Member' : 'NOT A MEMBER'}
         </button>
-        <button type="button">Join Mission</button>
+        <button
+          className={`${joined && 'outline-red'} action-btn-outline`}
+          type="button"
+          onClick={toggleJoin}
+        >
+          {joined ? 'Leave Mission' : 'Join Mission'}
+        </button>
       </div>
     </>
   );
@@ -43,8 +59,10 @@ GridHead.propTypes = {
 
 GridRow.propTypes = {
   mission: propTypes.shape({
+    id: propTypes.string.isRequired,
     name: propTypes.string.isRequired,
     description: propTypes.string.isRequired,
+    joined: propTypes.bool,
   }).isRequired,
 };
 
