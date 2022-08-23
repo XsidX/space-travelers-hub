@@ -13,7 +13,7 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
       flickr_image: rocket.flickr_image,
     };
     rocketsArray.push(rocketObject);
-    return rocketsArray
+    return rocketsArray;
   });
   return rocketsArray;
 });
@@ -37,5 +37,5 @@ export const getMissions = createAsyncThunk(
     });
 
     return missionsArray;
-  }
+  },
 );
