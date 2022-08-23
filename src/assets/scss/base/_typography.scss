@@ -171,8 +171,10 @@ p {
 // }
 
 button {
+  font-family: $roboto, sans-serif;
   background-color: transparent;
   border: none;
+  border-radius: 0.125rem;
   cursor: pointer;
   outline: none;
   padding: 0;

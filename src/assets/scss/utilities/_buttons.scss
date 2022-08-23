@@ -1,0 +1,31 @@
+.status-btn {
+  background-color: $status-btn;
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: $white;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+}
+
+.status-active {
+  background-color: $status-btn-active;
+}
+
+.action-btn {
+  padding: 0.4rem;
+  font-size: 0.75rem;
+  background-color: $btn;
+  color: $white;
+}
+
+.action-btn-outline {
+  border: 1px solid $status-btn;
+  padding: 0.4rem;
+  font-size: 0.75rem;
+  color: $heading;
+}
+
+.outline-red {
+  border: 1px solid $red;
+  color: $red;
+}

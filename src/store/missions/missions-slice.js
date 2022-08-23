@@ -10,7 +10,17 @@ const initialState = {
 const missionsSlice = createSlice({
   name: 'missions',
   initialState,
-  reducers: {},
+  reducers: {
+    missionJoined(state, action) {
+      const id = action.payload;
+      state.missions.map((mission) => {
+        if (mission.id === id) {
+          mission.joined = !mission.joined;
+        }
+        return mission;
+      });
+    },
+  },
   extraReducers: {
     [getMissions.pending]: (state) => {
       state.status = 'loading missions';
