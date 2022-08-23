@@ -18,6 +18,7 @@ export const getMissions = createAsyncThunk(
         id: mission.mission_id,
         name: mission.mission_name,
         description: mission.description,
+        joined: false,
       };
       missionsArray.push(missionObject);
 
