@@ -14,9 +14,11 @@ const rocketsSlice = createSlice({
     rocketReserved(state, action) {
       const id = action.payload;
       state.rockets.map((rocket) => {
-        if (rocket.id === id) {
+        const x = rocket.id.toString();
+        if (x === id) {
           rocket.reserved = !rocket.reserved;
         }
+
         return rocket;
       });
     },

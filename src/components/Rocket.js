@@ -6,7 +6,6 @@ import { rocketsActions } from '../store/rockets/rockets-slice';
 const Rockets = () => {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rockets.rockets) || [];
-  console.log(rockets.reserved);
   useEffect(() => {
     dispatch(getRockets());
   }, []);
