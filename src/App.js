@@ -3,7 +3,7 @@ import Layout from './components/layout/layout';
 
 import Rockets from './pages/Rockets';
 import Missions from './pages/Missions';
-import Profile from './pages/Profile';
+import MyProfile from './pages/MyProfile';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/rockets" element={<Rockets />} />
         <Route path="/missions" element={<Missions />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile" element={<MyProfile />} />
         <Route path="/" element={<Navigate to="/rockets" />} />
       </Routes>
     </Layout>

@@ -1,0 +1,26 @@
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+
+  .profile {
+    &__title {
+      font-weight: 500;
+      font-size: 1.2rem;
+      padding-bottom: 0.4rem;
+    }
+
+    &__content-wrapper {
+      border: 1px solid $border;
+      padding: 0.5rem 0.5rem 0.875rem 0.5rem;
+
+      &:not(:first-child):not(:last-child) {
+        border-bottom: none;
+      }
+    }
+
+    &__content-name {
+      font-size: 1rem;
+    }
+  }
+}
