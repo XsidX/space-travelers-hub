@@ -4,14 +4,59 @@
   align-items: center;
   height: 4rem;
   border-bottom: 1px solid $border;
+  padding: 0 1rem;
+  gap: 1.2rem;
 
   .logo-container {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
+
+    @media screen and (min-width: 768px) {
+      gap: 0.875rem;
+    }
 
     img {
       width: 2rem;
       height: 2rem;
+
+      @media screen and (min-width: 768px) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+
+    h1 {
+      font-size: 0.6rem;
+      font-weight: 500;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.2rem;
+      }
+
+      @media screen and (max-width: 320px) {
+        display: none;
+      }
+    }
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    font-size: 0.875rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1rem;
+    }
+
+    .nav-link {
+      color: $btn;
+    }
+
+    .nav-link-active {
+      border-bottom: 1px solid $border;
+      color: $status-btn-active;
     }
   }
 }

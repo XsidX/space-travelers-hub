@@ -6,7 +6,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: $baseFont, sans-serif;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 // /* Remove text-shadow in selection highlight. */
@@ -59,20 +59,20 @@ body {
 //   resize: vertical;
 // }
 
-// /* Anchor Tag Default Style */
-// a {
-//   transition: 0.4s;
-//   outline: none;
-//   text-decoration: none;
+/* Anchor Tag Default Style */
+a {
+  transition: 0.4s;
+  outline: none;
+  text-decoration: none;
 
-//   &:hover,
-//   &:active,
-//   &:focus {
-//     color: inherit;
-//     outline: none;
-//     text-decoration: none;
-//   }
-// }
+  &:hover,
+  &:active,
+  &:focus {
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+  }
+}
 
 // textarea,
 // input {

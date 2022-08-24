@@ -1,33 +1,29 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore
+# Space Traveler's Hub
 
-> The bookstore is a web application that allows users to:
-
-- Display a list of saved books.
-- Add a new book.
-- Remove a selected book.
-- Preview the chapter and progress saved while reading through a specific book. 
+> Space Traveler's Hub is a web application that allows users to book rockets and join selected space missions. It also includes a My Profile feature that allows users to view rockets they have reserved and missions joined.
 
 ## Built With
 
 - React(Create React App)
 - Sass
+- [SpaceX API](https://github.com/r-spacex/SpaceX-API).
 
 ## Live Demo Link
 
-Check out the live demo [here](https://bookstore-sid.netlify.app/home)
+Check out the live demo [here](https://space-travelers-hub-chrispaix-sid.netlify.app/).
 
 ## Getting Started
 
 ## Prerequisites
 
-- React
+- React & Redux
 - Sass
 
 ## Install
 
-- run `git clone git@github.com:XsidX/bookstore.git` on your terminal
+- run `git clone git@github.com:XsidX/space-travelers-hub.git` on your terminal
 - cd into the directory
 - run `npm install`
 
@@ -66,6 +62,12 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - Twitter: [@\_sid_o](https://twitter.com/_sid_o_)
 - LinkedIn: [Sidney Kaguli](https://www.linkedin.com/in/sidney-kaguli-0116801a6/)
 
+👤 **Chrispaix KAZE**
+
+- GitHub: [@ChrispaixK](https://github.com/ChrispaixK)
+- Twitter: [@ChrispaixK](https://twitter.com/ChrispaixK)
+- LinkedIn: [Chrispaix KAZE](https://www.linkedin.com/in/chrispaix-kaze-70445a175/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -78,8 +80,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
--Microverse Bookstore milestone 🎉
+-Microverse Bookstore React & Redux group capstone 🎉
 
 ## 📝 License
 
-This project is [MIT](https://github.com/XsidX/bookstore/blob/configure-redux/MIT.md) licensed.
+This project is [MIT](https://github.com/XsidX/space-travelers-hub/blob/dev/MIT.md) licensed.
