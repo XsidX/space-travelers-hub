@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore
+# Space Traveler's Hub
 
-> Space Traveler's Hub is a web application that allows users to book rockets and join selected space missions.
+> Space Traveler's Hub is a web application that allows users to book rockets and join selected space missions. It also includes a My Profile feature that allows users to view rockets they have reserved and missions joined.
 
 ## Built With
 
