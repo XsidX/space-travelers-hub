@@ -26,6 +26,7 @@
 
     &--member-status {
       margin-right: 0.4rem;
+
       @media screen and (min-width: 768px) {
         display: none;
       }
@@ -35,7 +36,6 @@
   &__status {
     grid-column: span 12;
     display: flex;
-
     align-items: center;
     gap: 2rem;
     margin-bottom: 1.2rem;
