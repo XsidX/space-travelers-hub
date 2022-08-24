@@ -15,6 +15,14 @@ const Profiles = () => {
           ))}
         {joinedMissions <= 0 && <ProfileDetail name="No Missions Joined" />}
       </Profile>
+
+      <Profile title="My Missions">
+        {joinedMissions.length > 0 &&
+          joinedMissions.map(({ id, name }) => (
+            <ProfileDetail key={id} name={name} />
+          ))}
+        {joinedMissions <= 0 && <ProfileDetail name="No Missions Joined" />}
+      </Profile>
     </div>
   );
 };

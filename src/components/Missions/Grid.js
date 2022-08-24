@@ -32,11 +32,23 @@ const GridRow = ({ mission }) => {
         <h3 className="grid__item--title">{name}</h3>
       </div>
       <div className="grid__item grid__description">
-        <h3>{description}</h3>
+        <h3>
+          <button
+            className={`${
+              joined && 'status-active'
+            } status-btn grid__description--member-status`}
+            type="button"
+          >
+            {joined ? 'Active Member' : 'NOT A MEMBER'}
+          </button>
+          {description}
+        </h3>
       </div>
       <div className="grid__item grid__status">
         <button
-          className={`${joined && 'status-active'} status-btn`}
+          className={`${
+            joined && 'status-active'
+          } status-btn grid__item--member-status`}
           type="button"
         >
           {joined ? 'Active Member' : 'NOT A MEMBER'}
