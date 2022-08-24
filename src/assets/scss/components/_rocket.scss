@@ -3,34 +3,49 @@
   margin: 10px 20px;
   align-items: center;
   border: 1px solid $border;
-  height: 200px;
+  flex-wrap: wrap;
+
+  .desactive {
+    display: none;
+  }
 
   img {
-    max-height: 190px;
+    width: 350px;
+    height: 200px;
     margin-right: 15px;
   }
 
-  button {
-    border: 1px solid $border;
+  .btn {
     margin-top: 15px;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: $btn;
     color: $bodyColor;
+    margin-right: 10px;
   }
-  p{
+
+  .cancelButton {
+    color: #686868;
+    background-color: $border;
+    border: 1px solid gray;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  p {
+    max-width: 550px;
+
     span {
-      color :#fff;
-      background-color:$status-btn-active;
+      color: #fff;
+      background-color: $status-btn-active;
       padding: 2px 5px;
       border-radius: 3px;
       font-size: 12px;
       font-weight: 600;
       box-shadow: 0 1px 3px 0.1px rgba(0, 0, 0, 0.226);
       margin-right: 5px;
-    }
-    .desactive {
-      display: none;
     }
   }
 }

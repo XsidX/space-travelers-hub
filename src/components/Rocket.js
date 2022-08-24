@@ -26,11 +26,14 @@ const Rockets = () => {
           <div className="rocket-infos">
             <h2>{rocket.rocket_name}</h2>
             <p>
-              <span className="desactive">Reserved</span>
+              <span id={rocket.id} className="desactive">Reserved</span>
               {rocket.description}
             </p>
-            <button id={rocket.id} type="button" onClick={toggleReserve}>
+            <button id={rocket.id} type="button" className="btn" onClick={toggleReserve}>
               Reserve Rocket
+            </button>
+            <button id={rocket.id} type="button" className="btn cancelButton desactive" onClick={toggleReserve}>
+              Cancel Reservation
             </button>
           </div>
         </div>
