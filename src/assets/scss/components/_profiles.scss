@@ -1,9 +1,19 @@
 .profile-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
+
+  @media screen and (min-width: 768px) {
+    gap: 2rem;
+  }
 
   .profile {
+    grid-column: span 2;
+
+    @media screen and (min-width: 768px) {
+      grid-column: span 1;
+    }
+
     &__title {
       font-weight: 500;
       font-size: 1.2rem;

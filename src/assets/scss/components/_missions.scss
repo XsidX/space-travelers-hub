@@ -1,41 +1,86 @@
 .grid {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  border: 1px solid $border;
   font-size: 0.8rem;
 
+  @media screen and (min-width: 768px) {
+    border: 1px solid $border;
+  }
+
   &__mission {
-    grid-column: span 1;
+    grid-column: span 12;
+
+    @media screen and (min-width: 768px) {
+      grid-column: span 1;
+    }
   }
 
   &__description {
-    grid-column: span 8;
+    grid-column: span 12;
     font-size: 0.75rem;
+
+    @media screen and (min-width: 768px) {
+      grid-column: span 8;
+    }
+
+    &--member-status {
+      margin-right: 0.4rem;
+
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
   }
 
   &__status {
-    grid-column: span 3;
+    grid-column: span 12;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 1.2rem;
+
+    @media screen and (min-width: 768px) {
+      grid-column: span 3;
+      justify-content: center;
+      margin-bottom: 0;
+    }
   }
 
   &__item {
-    border-top: 1px solid $border;
-    padding: 0.5rem 0.3rem;
+    padding: 0.2rem 0;
+
+    @media screen and (min-width: 768px) {
+      border-top: 1px solid $border;
+      padding: 0.5rem 0.3rem;
+    }
 
     &:nth-child(-n + 3) {
       border-top: none;
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
     }
 
     &:nth-child(3n + 2) {
-      border-left: 1px solid $border;
-      border-right: 1px solid $border;
+      @media screen and (min-width: 768px) {
+        border-left: 1px solid $border;
+        border-right: 1px solid $border;
+      }
     }
 
     &--title {
       font-weight: bold;
+    }
+
+    &--member-status {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
     }
   }
 }
