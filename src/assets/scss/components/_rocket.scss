@@ -1,13 +1,8 @@
 .rocket-container {
   display: flex;
-  margin: 10px 20px;
   align-items: center;
   border: 1px solid $border;
   flex-wrap: wrap;
-
-  .desactive {
-    display: none;
-  }
 
   img {
     width: 350px;
@@ -15,27 +10,9 @@
     margin-right: 15px;
   }
 
-  .btn {
-    margin-top: 15px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: $btn;
-    color: $bodyColor;
-    margin-right: 10px;
-  }
-
-  .cancelButton {
-    color: #686868;
-    background-color: $border;
-    border: 1px solid gray;
-  }
-
-  .hide {
-    display: none;
-  }
-
   p {
     max-width: 550px;
+    margin-bottom: 15px;
 
     span {
       color: #fff;

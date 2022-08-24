@@ -17,12 +17,6 @@ const rocketsSlice = createSlice({
         const x = rocket.id.toString();
         if (x === id) {
           rocket.reserved = !rocket.reserved;
-          const span = document.getElementById(x);
-          const cancelBtn = document.querySelector('.cancelButton');
-          const reserveBtn = document.querySelector('.btn');
-          span.classList.toggle('desactive');
-          cancelBtn.classList.toggle('desactive');
-          reserveBtn.classList.toggle('desactive');
         }
 
         return rocket;
