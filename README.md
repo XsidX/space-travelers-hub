@@ -18,7 +18,7 @@ Check out the live demo [here](https://space-travelers-hub-chrispaix-sid.netlify
 
 ## Prerequisites
 
-- React
+- React & Redux
 - Sass
 
 ## Install
@@ -80,7 +80,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
--Microverse Bookstore milestone 🎉
+-Microverse Bookstore React & Redux group capstone 🎉
 
 ## 📝 License
 
