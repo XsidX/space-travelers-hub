@@ -9,13 +9,22 @@ const Header = () => (
       <h1>Space Travelers Hub</h1>
     </div>
     <nav className="nav">
-      <NavLink className="nav-link" to="/rockets">
+      <NavLink
+        className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}
+        to="/rockets"
+      >
         Rockets
       </NavLink>
-      <NavLink className="nav-link" to="/missions">
+      <NavLink
+        className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}
+        to="/missions"
+      >
         Missions
       </NavLink>
-      <NavLink className="nav-link" to="/profile">
+      <NavLink
+        className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}
+        to="/profile"
+      >
         My Profile
       </NavLink>
     </nav>
