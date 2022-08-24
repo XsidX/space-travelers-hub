@@ -1,17 +1,55 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   height: 4rem;
   border-bottom: 1px solid $border;
+  padding: 0 1rem;
+  gap: 1.2rem;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
 
   .logo-container {
     display: flex;
     align-items: center;
+    gap: 0.875rem;
 
     img {
       width: 2rem;
       height: 2rem;
+
+      @media screen and (min-width: 768px) {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+
+    h1 {
+      display: none;
+      font-size: 1.4rem;
+      font-weight: 500;
+
+      @media screen and (min-width: 768px) {
+        display: inline;
+      }
+    }
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    font-size: 1rem;
+
+    .nav-link {
+      color: $btn;
+    }
+
+    .nav-link-active {
+      border-bottom: 1px solid $border;
+      color: $status-btn-active;
     }
   }
 }
