@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridRow component renders correctly 1`] = `
+Array [
+  <div
+    className="grid__item grid__mission "
+  >
+    <h3
+      className="grid__item--title"
+    >
+      Test Mission
+    </h3>
+  </div>,
+  <div
+    className="grid__item grid__description"
+  >
+    <h3>
+      <button
+        className="false status-btn grid__description--member-status"
+        type="button"
+      >
+        NOT A MEMBER
+      </button>
+      Test description
+    </h3>
+  </div>,
+  <div
+    className="grid__item grid__status"
+  >
+    <button
+      className="false status-btn grid__item--member-status"
+      type="button"
+    >
+      NOT A MEMBER
+    </button>
+    <button
+      className="false action-btn-outline"
+      onClick={[Function]}
+      type="button"
+    >
+      Join Mission
+    </button>
+  </div>,
+]
+`;
