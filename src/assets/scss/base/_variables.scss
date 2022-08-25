@@ -1,0 +1,54 @@
+//== Typography Variable
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap');
+
+$baseFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Roboto Slab', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+//== Site Typography Colors
+$bodyColor: #f5f6fa;
+$paragraph: #4386bf;
+$logo: #0290ff;
+$heading: #121212;
+$ash: #888;
+$border: #e8e8e8;
+$btn: #0290ff;
+$status-btn: #6d757d;
+$status-btn-active: #18a2b8;
+
+//== Site Brand Color
+$brandColor: #080b1a;
+$secondaryColor: #6a77bb;
+$brandColorDark: darken($brandColor, 15%);
+$brandColorLight: lighten($brandColor, 15%);
+$sectionColor: #10687c;
+$sectionColordark: #323440;
+$sectionColorLight: lighten($sectionColor, 15%);
+
+//== Alternative Color
+$white: #fafafa;
+$offWhite: #f8f9fc;
+$black: #000;
+$blackSoft: #222;
+$navy: #3b5998;
+$pink: #ff69b4;
+$violet: #93c;
+$olive: #559137;
+$green: #008000;
+$red: #e04f5c;
+$orange: #f5740a;
+$yellow: #fbbf00;
+
+//== Social Media Icons Color
+$facebook: #3b5999;
+$twitter: #1da1f2;
+$pinterest: #cb2028;
+$youtube: #cc332d;
+$reddit: #ff4500;
+$linkedin: #0077b5;
+
+//== Responsive Media Query Variables

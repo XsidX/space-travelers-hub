@@ -1,0 +1,9 @@
+.layout {
+  &__content {
+    padding: 1rem;
+
+    @media screen and (min-width: 768px) {
+      padding: 1rem 2rem;
+    }
+  }
+}

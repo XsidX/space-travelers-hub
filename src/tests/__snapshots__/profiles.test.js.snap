@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profiles component renders correctly 1`] = `
+<div
+  className="profile-grid"
+>
+  <ul
+    className="profile"
+  >
+    <li>
+      <h2
+        className="profile__title"
+      >
+        My Missions
+      </h2>
+    </li>
+    <li
+      className="profile__content-wrapper"
+    >
+      <h3
+        className="profile__content-name"
+      >
+        No Missions Joined
+      </h3>
+    </li>
+  </ul>
+  <ul
+    className="profile"
+  >
+    <li>
+      <h2
+        className="profile__title"
+      >
+        My Rockets
+      </h2>
+    </li>
+    <li
+      className="profile__content-wrapper"
+    >
+      <h3
+        className="profile__content-name"
+      >
+        No Rocket Reserved
+      </h3>
+    </li>
+  </ul>
+</div>
+`;

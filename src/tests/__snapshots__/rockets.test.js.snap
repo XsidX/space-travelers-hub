@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets component renders correctly 1`] = `
+<div
+  className="rocket-container"
+>
+  <div
+    className="rocket-img"
+  >
+    <img
+      alt="rocket"
+      src="https://farm1.staticflickr.com/813/29188622681_f8f5e7e0e0_o.jpg"
+    />
+  </div>
+  <div
+    className="rocket-infos"
+  >
+    <h2>
+      Falcon 1
+    </h2>
+    <p>
+      Falcon 1 is a partially reusable expendable rocket designed and manufactured by SpaceX.
+    </p>
+    <button
+      className="action-btn"
+      id="1"
+      onClick={[Function]}
+      type="button"
+    >
+      Reserve Rocket
+    </button>
+  </div>
+</div>
+`;
